@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   consul:
-    image: consul
+    image: hashicorp/consul
     container_name: consul
     restart: unless-stopped
     networks:
@@ -113,7 +113,7 @@ services:
     #   - seq:/data
 
   vault:
-    image: vault
+    image: hashicorp/vault
     container_name: vault
     restart: unless-stopped
     environment:
